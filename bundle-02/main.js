@@ -35,11 +35,12 @@ printColorsNumber();
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
+    const userNumber = parseInt(prompt('Inserisci un numero'));
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
 }
+// al prompt serve un parseInt perchè con un semplice prompt abbiamo una stringa al posto del numero
 addNumbers();
 
 
