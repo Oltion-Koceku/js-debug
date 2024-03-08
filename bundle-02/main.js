@@ -85,15 +85,16 @@ function checkAccessImproved() {
 
         }
 
-        if (grantAccess) {
+        if (grantAccess === "true") {
             console.log('Accesso consentito!');
         } else {
             console.log('Accesso negato!');
         }
     }
-    checkAccessImproved();
-
+    
 }
+// cerano 2 errori , il primo è che abbiamo richiamato la funzione dentro la funzione e il secondo è un problema dentro l'if che accetta valori booleani e no stringhe, cosi ho risolto il problema aggiungendo === "true"
+checkAccessImproved();
 
 // problema graffa funzione
 
