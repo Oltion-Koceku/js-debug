@@ -41,7 +41,7 @@ function addNumbers() {
     console.log(`Il risultato finale è ${total}`);
 }
 // al prompt serve un parseInt perchè con un semplice prompt abbiamo una stringa al posto del numero
-// addNumbers();
+addNumbers();
 
 
 // ESERCIZIO 4
@@ -62,7 +62,7 @@ function checkAccess() {
     }
 }
 // il true ed il false non devono essere stringhe ma valori
-// checkAccess();
+checkAccess();
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
