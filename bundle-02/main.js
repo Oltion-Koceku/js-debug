@@ -13,7 +13,7 @@
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
@@ -21,13 +21,15 @@ function checkAge() {
         message = 'Hai più di 18 anni!';
     }
 }
+// la const message non puo essere cambiata perchè è appunto una const e non una let
 checkAge();
 
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 }
+// colors.lenght è scritto sbagliato
 printColorsNumber();
 
 
@@ -89,9 +91,9 @@ function checkAccessImproved() {
     }
     checkAccessImproved();
 
+}
 
-
-
+// problema graffa funzione
 
 
 
