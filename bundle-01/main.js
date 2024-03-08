@@ -47,4 +47,5 @@ function displayEvenNumbers() {
     console.log(evenNumbers);
     return evenNumbers;
 }
+// il primo problema è numbers.length non serve il -1, il punto e virgola alla fine del i++ non serve, nell'if numbres prende l'array al posto del numero che ci serve quindi aggiungiamo [i], === al posto del = 0, il punto e virgola dopo l'if, nel evenNumbres.push non basta solo l'i ma serve numbers[i] con i prendiamo solo il contatore in fine il return va fuori dal'for alla fine della funzione.
 displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
