@@ -41,7 +41,7 @@ function addNumbers() {
     console.log(`Il risultato finale è ${total}`);
 }
 // al prompt serve un parseInt perchè con un semplice prompt abbiamo una stringa al posto del numero
-addNumbers();
+// addNumbers();
 
 
 // ESERCIZIO 4
@@ -49,10 +49,10 @@ function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
+        grantAccess = true;
     }
 
     if (grantAccess === true) {
@@ -61,7 +61,8 @@ function checkAccess() {
         console.log('Accesso negato!');
     }
 }
-checkAccess();
+// il true ed il false non devono essere stringhe ma valori
+// checkAccess();
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
